@@ -1,37 +1,104 @@
+:root {
+  /* cuantas variable de img puedo declarar? */
+  --dulceDLeche: url("assets/img/productos/Producto1.png");
+  --color: #B18D72;
+}
 
-.fotoBanner{
-    background-image: url(./assets/img/banner.png);
-   background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-    width:100% ;
-    height: auto;
-    display: flex; 
-    justify-content: flex-end;
+.fotoBanner {
+  background-image: url(./assets/img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
 
 }
-.alinear{
-  height:450px;
+
+.alinear {
+  height: 450px;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-right: 10px;
-  
-}
-h1,
-p{
-color:white
-} 
 
-/* .alinear a{
-    margin-top: 2rem;
-    text-decoration: none;
-    color:black;
-    background-color: #c7a17a;
-    display:inline-block;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
+}
+
+h1,
+p {
+  color: white
+}
+
+/*************************** productos************************** */
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background-color: rgb(67, 64, 64);
+}
+
+.dulceDLeche {
+  display: flex;
+  justify-content: end;
+}
+
+.dulceDLeche img {
+  /*   background-image:var(--dulceDLeche);
+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  text-align: center;
+  justify-content: flex-end;
+}
+
+h3 {
+  color: var(--color);
+  font-weight: 100;
+}
+
+.btn {
+  border: 2px solid #B18D72;
+  color: var(--color);
+}
+
+/***************************************** Sin azucar**************************************** */
+.sinAzucar img {
+  /*   background-image: url(./assets/img/productos/Producto2.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/* 
+.descri {
+  
+  display: flex;
+  justify-content: right;
+  align-items:flex-end;
 } */
+h4{
+  color:var(--color);
+  font-weight: 100;
+}
