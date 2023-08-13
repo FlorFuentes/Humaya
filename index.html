@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://florfuentes.github.io/Humaya/assets/img/logo/LogoHumaya100x100.png">
   <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
@@ -24,28 +24,29 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">HUMAYA</a>
+        <!-- <div class="container"> -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo/LogoMenu60x48.png" alt="Bootstrap" width="50" height="40">
+          HUMAYA</a>
+        <!-- </div> -->
+        <!--         <a class="navbar-brand" href="#">HUMAYA</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">Productos</a>
             </li>
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo/LogoMenu60x48.png" alt="Bootstrap" width="30" height="24">
-              </a>
-            </div>
-            <li class="nav-item">
+
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">Locales</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" aria-disabled="#">Contacto</a>
             </li>
           </ul>
@@ -58,7 +59,7 @@
         <h1>DULCES DEL ALMA</h1>
         <p>Los productos HUMAYA son elaborados desde hace mas de 50 años fiel a las tradiciones familiares y sabores
           caseros,acompañándote en los momentos más importantes de la vida.</p>
-        <button type="button" class="btn btn-dark mx-auto">CONTACTANOS</button>
+        <button type="button" class="btn btn-dark mx-auto">CONOCENOS</button>
       </div>
     </div>
   </header>
@@ -67,28 +68,48 @@
     <section class="productos">
       <h2>PRODUCTOS</h2>
       <div class="container">
-          <div class="dulceDLeche"> 
-            <img src="./assets/img/productos/Producto1.png" alt="">
-            <div class="titulo">
-              <h3>DULCE DE LECHE TRADICIONAL</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, asperiores libero in, assumenda perferendis commodi debitis reprehenderit repellendus eaque quae amet animi, consequatur dignissimos atque! Commodi consectetur ipsa autem sint!</p>
-              <button type="button" class="btn btn-outline-light">+info</button>
-            </div>
-          </div> 
-
-          
-      </div>
-      <div class="container">
-        <div class="sinAzucar">
-          <img src="./assets/img/productos/Producto2.png" alt="">
-          <div class="descri">
-            <h4>DULCE DE LECHE SIN AZÚCAR</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ullam, totam quidem enim quibusdam quo repellat ratione iste accusantium nulla doloremque quia voluptas maxime esse illum dolore sunt, ex deserunt.</p>
+        <div class="dulceDLeche">
+          <img src="./assets/img/productos/Producto1.png" alt="">
+          <div class="titulo">
+            <h3>DULCE DE LECHE TRADICIONAL</h3>
+            <p>Elaboración artesanal de principio a fin, con un sabor intenso, receta tradiconal.</p>
+            <p class="presentacion1">Presentación en frasco de vidrio de 580gr.</p>
             <button type="button" class="btn btn-outline-light">+info</button>
-
           </div>
         </div>
+
+<!--         <div class="container"> -->
+          <div class="sinAzucar">
+            <img src="./assets/img/productos/Producto2.png" alt="">
+            <div class="titulo">
+              <h4>DULCE DE LECHE SIN AZÚCAR</h4>
+              <p>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.</p>
+              <p class="presentacion2">Presentación en frasco de vidrio de 580gr y 280gr.</p>
+              <button type="button" class="btn btn-outline-light">+info</button>
+  
+            </div>
+          </div>
+       <!--  </div> -->
+
+          <div class="dChoconutt">
+            <img src="./assets/img/productos/Producto3.png" alt="">
+            <div class="titulo">
+              <h5>DULCE CHOCONUTT</h5>
+              <p>Elaboración artesanal para el capricho dulce, combinación de dulce de leche, chocolate y pasta de avellanas. Una delicia única</p>
+              <p class="presentacion3">Presentación en frasco de vidrio de 280gr.</p>
+              <button type="button" class="btn btn-outline-light">+info</button>
+
+            </div>
+          </div>
       </div>
+      
+    </section>
+
+    <section class="destacado">
+      <h6>ALFAJORES DE MAICENA</h6>
+      <p>Alfajores de dulce de coco relleno, relleno con 2cm de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light o choconutt.</p>
+      <p>Presentación en caja de 6 y 12 alfajores.</p>
+      <button type="button">+INFO</button>
     </section>
   </main>
 

@@ -1,9 +1,6 @@
 :root {
-  /* cuantas variable de img puedo declarar? */
-  --dulceDLeche: url("assets/img/productos/Producto1.png");
-  --color: #B18D72;
+--color: #B18D72;
 }
-
 .fotoBanner {
   background-image: url(./assets/img/banner.png);
   background-repeat: no-repeat;
@@ -19,10 +16,10 @@
 .alinear {
   height: 450px;
   width: 50%;
-  display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   padding-right: 10px;
 
 }
@@ -31,8 +28,13 @@ h1,
 p {
   color: white
 }
-
-/*************************** productos************************** */
+.alinear button{
+  color:white;
+  background-color: rgba(0, 0, 0, 0.64);
+  font-weight: 500;
+  border-radius: 5rem solid rgba(0,0,0,0.64);
+}
+/*************************** Productos************************** */
 .container {
   background-color: black;
   display: flex;
@@ -49,56 +51,124 @@ h2 {
 .dulceDLeche {
   display: flex;
   justify-content: end;
+  
 }
 
 .dulceDLeche img {
-  /*   background-image:var(--dulceDLeche);
- */
   background-repeat: no-repeat;
   background-size: cover;
   width: 75%;
   height: auto;
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .titulo {
   text-align: center;
   justify-content: flex-end;
+  padding: 10px;
 }
 
 h3 {
   color: var(--color);
   font-weight: 100;
 }
+.presentacion1{
+  color: var(--color);
+  font-weight: 500;
+  overflow: hidden;
+}
 
-.btn {
+.titulo button {
   border: 2px solid #B18D72;
   color: var(--color);
 }
 
 /***************************************** Sin azucar**************************************** */
+.sinAzucar{
+  display: flex;
+  justify-content: end;
+}
 .sinAzucar img {
   /*   background-image: url(./assets/img/productos/Producto2.png); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 75%;
   height: auto;
-
-  display: flex;
+}
+ /*  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}/* 
-.descri {
-  
-  display: flex;
-  justify-content: right;
-  align-items:flex-end;
-} */
+  justify-content: center; 
+ */
+   
+.presentacion2{
+  color:var(--color);
+  font-weight: 500;
+  overflow: hidden;
+}
 h4{
   color:var(--color);
   font-weight: 100;
+
+}
+/***********************************************Dulce Choconutt ***********************************************/
+.dChoconutt{
+  display: flex;
+  justify-content: end;
+}
+.dChoconutt img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: auto;
+ /*  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.presentacion3{
+  color:var(--color);
+  font-weight: 500;
+  overflow: hidden;
+  
+}
+h5{
+  color:var(--color);
+  font-weight: 100;
+
+}
+
+/***************************************** Destacado**************************************** */
+.destacado{
+  background-image: url(./assets/img/productos/Producto4b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************** Media Query**************************************** */
+@media screen and (max-width:775px) {
+  .dulceDLeche img {
+    width: 20rem;
+  }
 }
