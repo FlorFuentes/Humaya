@@ -1,6 +1,7 @@
 :root {
---color: #B18D72;
+  --color: #B18D72;
 }
+
 .fotoBanner {
   background-image: url(./assets/img/banner.png);
   background-repeat: no-repeat;
@@ -16,30 +17,37 @@
 .alinear {
   height: 450px;
   width: 50%;
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   padding-right: 10px;
 
 }
 
-h1,
-p {
+h1 {
   color: white
 }
-.alinear button{
-  color:white;
+
+.info {
+  color: white;
+}
+
+.alinear button {
+  color: white;
   background-color: rgba(0, 0, 0, 0.64);
   font-weight: 500;
-  border-radius: 5rem solid rgba(0,0,0,0.64);
+  border-radius: 5rem solid rgba(0, 0, 0, 0.64);
 }
+
 /*************************** Productos************************** */
-.container {
+.productos {
+  width: 100vw;
+  /* Ancho del viewport */
+  /*
   background-color: black;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
+   padding: 20px; /* Añade espacio alrededor del contenido */
+
 }
 
 h2 {
@@ -48,18 +56,29 @@ h2 {
   background-color: rgb(67, 64, 64);
 }
 
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+
 .dulceDLeche {
   display: flex;
   justify-content: end;
-  
+
 }
 
 .dulceDLeche img {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   width: 75%;
-  height: auto;
-/*   display: flex;
+  height: auto; */
+  max-width: 50%;
+  /* Limita el ancho de la imagen */
+
+  /*   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
@@ -75,95 +94,145 @@ h3 {
   color: var(--color);
   font-weight: 100;
 }
-.presentacion1{
+
+.presentacion1 {
   color: var(--color);
   font-weight: 500;
   overflow: hidden;
 }
 
-.titulo button {
+.claro {
   border: 2px solid #B18D72;
   color: var(--color);
 }
 
 /***************************************** Sin azucar**************************************** */
-.sinAzucar{
+.sinAzucar {
   display: flex;
   justify-content: end;
 }
+
 .sinAzucar img {
   /*   background-image: url(./assets/img/productos/Producto2.png); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   width: 75%;
-  height: auto;
+  height: auto; */
+  max-width: 50%;
+
 }
- /*  display: flex;
+
+/*  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
  */
-   
-.presentacion2{
-  color:var(--color);
+
+.presentacion2 {
+  color: var(--color);
   font-weight: 500;
   overflow: hidden;
 }
-h4{
-  color:var(--color);
+
+h4 {
+  color: var(--color);
   font-weight: 100;
 
 }
+
 /***********************************************Dulce Choconutt ***********************************************/
-.dChoconutt{
+.dChoconutt {
   display: flex;
   justify-content: end;
 }
+
 .dChoconutt img {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   width: 75%;
-  height: auto;
- /*  display: flex;
+  height: auto; */
+  /*  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
+  max-width: 50%;
 }
-.presentacion3{
-  color:var(--color);
+
+.presentacion3 {
+  color: var(--color);
   font-weight: 500;
   overflow: hidden;
-  
+
 }
-h5{
-  color:var(--color);
+
+h5 {
+  color: var(--color);
   font-weight: 100;
 
 }
 
 /***************************************** Destacado**************************************** */
-.destacado{
-  background-image: url(./assets/img/productos/Producto4b.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: center; */
-  width: 100%;
-  height: auto;
+.destacado {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+  background-color: #BBA076;
+}
+
+.destacado img {
+  /*   background-image: url(./assets/img/productos/Producto2.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: auto; */
+  max-width: 50%;
+
+}
+
+/*  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+ */
+
+.presentacion4 {
+  color: #63421E;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+h6 {
+  color: #63421E;
+  font-weight: 100;
+
+}
+
+.oscuro {
+  border: 2px solid #63421E;
+  color: #63421E;
 
 }
 
 
+/***************************************** Contacto**************************************** */
+.contacto {
+  background-color: black;
+}
 
+.calidad p {
+  text-align: center;
+  font-weight: 600;
+}
 
+.iconos {
+  color: white;
+  align-items: center;
+}
 
-
-
-
-
-
-
+i .fa-solid {
+  padding: 10px 20px;
+  font-size: 23px;
+  color: white;
+}
 
 
 /***************************************** Media Query**************************************** */
