@@ -41,22 +41,16 @@ h1 {
 }
 
 /*************************** Productos************************** */
-.productos {
-  width: 100vw;
-  /* Ancho del viewport */
-  /*
-  background-color: black;
-   padding: 20px; /* Añade espacio alrededor del contenido */
 
-}
 
 h2 {
+  margin: 0;
   text-align: center;
   color: white;
   background-color: rgb(67, 64, 64);
 }
 
-.container {
+.contPrincipal {
   background-color: black;
   display: flex;
   justify-content: start;
@@ -215,7 +209,9 @@ h6 {
 
 /***************************************** Contacto**************************************** */
 .contacto {
-  background-color: black;
+  /*   background-color: black; */
+  background: rgb(44, 41, 42);
+  background: radial-gradient(circle, rgba(44, 41, 42, 1) 34%, rgba(44, 41, 42, 1) 40%, rgba(44, 41, 42, 1) 72%, rgba(44, 41, 42, 1) 100%);
 }
 
 .calidad p {
@@ -224,17 +220,83 @@ h6 {
 }
 
 .iconos {
+  /* color: #BCA076; */
+  text-align: center;
+  padding: 30px;
+}
+.iconos img{
+  color: var(--color);
+  background-color: transparent ;
+  width: 10%;
+}
+
+.fa-solid,
+.fa-brands {
+  padding: 10px 35px;
+  font-size: 70px;
+  color: #BCA076;
+}
+
+.contac {
   color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/***************************************** Formulario**************************************** */
+.formulario{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.formulario img{
+  max-width: 50%;
+  max-height: 50%;
+}
+.formulario p{
+color: #684827;
+text-align: inherit;
+font-weight: 500;
+}
+form {
+  /* padding: 5px;
+  border-radius: 5px; */
+  width: 35%;
+  margin: auto;
+  height: 10%;
+}
+label{
+  color: #856A4E;
+}
+.form-control{
+  background-color: #856A4E;
+  
+
+}
+/* ver boton o hago un input */
+.btn-outline-primary{
   align-items: center;
+  color:#684827;
+}
+.btn-outline-primary:hover{
+  background-color: white;
 }
 
-i .fa-solid {
-  padding: 10px 20px;
-  font-size: 23px;
+
+/***************************************** Recetas**************************************** */
+.recetas{
+  background-color: black;
+}
+.rec{
+  text-align: center;
   color: white;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-
+.card{
+  background-color:#BBA076 ;
+}
 /***************************************** Media Query**************************************** */
 @media screen and (max-width:775px) {
   .dulceDLeche img {
