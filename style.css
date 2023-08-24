@@ -6,6 +6,7 @@
   background-image: url(./assets/img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+
   /* background-position: center; */
   width: 100%;
   height: auto;
@@ -16,21 +17,28 @@
 
 .alinear {
   height: 450px;
+  /* modificado */
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-right: 10px;
+  text-align: center;
 
 }
 
 h1 {
-  color: white
+  color: white;
+  font-size: 2.5rem;
+  
 }
 
 .info {
   color: white;
+  font-size: 1rem;
+  margin: 10px 0;
+
 }
 
 .alinear button {
@@ -38,6 +46,10 @@ h1 {
   background-color: rgba(0, 0, 0, 0.64);
   font-weight: 500;
   border-radius: 5rem solid rgba(0, 0, 0, 0.64);
+  padding: 10px 20px;
+
+  font-size: 1rem;
+
 }
 
 /*************************** Productos************************** */
@@ -209,7 +221,6 @@ h6 {
 
 /***************************************** Contacto**************************************** */
 .contacto {
-  /*   background-color: black; */
   background: rgb(44, 41, 42);
   background: radial-gradient(circle, rgba(44, 41, 42, 1) 34%, rgba(44, 41, 42, 1) 40%, rgba(44, 41, 42, 1) 72%, rgba(44, 41, 42, 1) 100%);
 }
@@ -220,21 +231,34 @@ h6 {
 }
 
 .iconos {
-  /* color: #BCA076; */
   text-align: center;
   padding: 30px;
-}
-.iconos img{
-  color: var(--color);
-  background-color: transparent ;
-  width: 10%;
+  margin: 40px 10px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.fa-solid,
-.fa-brands {
-  padding: 10px 35px;
-  font-size: 70px;
-  color: #BCA076;
+.icono {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconos img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.txt {
+  color: #BBA076;
+  margin-top: 10px;
 }
 
 .contac {
@@ -244,62 +268,122 @@ h6 {
 }
 
 /***************************************** Formulario**************************************** */
-.formulario{
+.formulario {
   display: flex;
-  justify-content: flex-end;
-
+  /*   justify-content: flex-end; 
+ */
 }
-.formulario img{
+
+.formulario img {
   max-width: 50%;
   max-height: 50%;
-}
-.formulario p{
-color: #684827;
-text-align: inherit;
-font-weight: 500;
-}
-form {
-  /* padding: 5px;
-  border-radius: 5px; */
-  width: 35%;
-  margin: auto;
-  height: 10%;
-}
-label{
-  color: #856A4E;
-}
-.form-control{
-  background-color: #856A4E;
-  
 
 }
-/* ver boton o hago un input */
-.btn-outline-primary{
-  align-items: center;
-  color:#684827;
+
+form {
+  max-width: 50%;
+  max-height: 50%;
+  margin-right: 20px;
 }
-.btn-outline-primary:hover{
+
+.formulario p {
+  color: #684827;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+}
+
+
+label {
+  color: #856A4E;
+}
+
+.form-control {
+  background-color: #856A4E;
+
+
+}
+
+/* ver boton o hago un input */
+.btn-outline-primary {
+  align-items: center;
+  color: #684827;
+}
+
+.btn-outline-primary:hover {
   background-color: white;
 }
 
 
 /***************************************** Recetas**************************************** */
-.recetas{
+.recetas {
   background-color: black;
+
 }
-.rec{
+
+.rec {
   text-align: center;
   color: white;
   font-size: 2rem;
   font-weight: 500;
 }
 
-.card{
-  background-color:#BBA076 ;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
+
+
+
+.card {
+  background-color: #BBA076;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  color: #684827;
+  font-weight: 600;
+}
+
+.botoncito {
+  font-weight: 600;
+  border: 2px solid #684827;
+  background-color: #BBA076;
+  color: #684827;
+}
+
 /***************************************** Media Query**************************************** */
 @media screen and (max-width:775px) {
   .dulceDLeche img {
     width: 20rem;
+  }
+}
+
+/* 
+@media screen and (max-width:650px) {
+  .contPrincipal {}
+} */
+
+@media (max-width: 768px) {
+  .alinear {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .info {
+    font-size: 0.9rem;
+  }
+
+  .alinear button {
+    font-size: 0.9rem;
   }
 }
