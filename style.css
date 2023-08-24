@@ -178,46 +178,43 @@ h5 {
 }
 
 /***************************************** Destacado**************************************** */
+/* Agrega estos estilos a tu hoja de estilos CSS */
 .destacado {
   display: flex;
-  justify-content: end;
+  justify-content: space-between; /* Distribuye el contenido a los extremos */
+  align-items: center; /* Centra verticalmente el contenido */
   background-color: #BBA076;
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+.destacado .titulo {
+  flex: 1; /* Toma el espacio restante */
 }
 
 .destacado img {
-  /*   background-image: url(./assets/img/productos/Producto2.png); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: 75%;
-  height: auto; */
-  max-width: 50%;
-
+  max-width: 40%; /* Reduce el ancho de la imagen */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra a la imagen */
 }
 
-/*  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
- */
-
-.presentacion4 {
+/* Ajusta el color del texto y el botón según tus necesidades */
+.presentacion4,
+h6,
+.oscuro {
   color: #63421E;
-  font-weight: 500;
-  overflow: hidden;
 }
 
-h6 {
-  color: #63421E;
-  font-weight: 100;
-
-}
-
+/* Ajusta el estilo del botón oscuro */
 .oscuro {
   border: 2px solid #63421E;
-  color: #63421E;
-
+  background-color: transparent;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
+.oscuro:hover {
+  background-color: #63421E;
+  color: white;
+}
 
 /***************************************** Contacto**************************************** */
 .contacto {
@@ -356,18 +353,13 @@ label {
   background-color: #BBA076;
   color: #684827;
 }
+/***************************************** Footer**************************************** */
+.logo{
+  background-repeat: no-repeat;
+  background-size: cover;
 
-/***************************************** Media Query**************************************** */
-@media screen and (max-width:775px) {
-  .dulceDLeche img {
-    width: 20rem;
-  }
 }
-
-/* 
-@media screen and (max-width:650px) {
-  .contPrincipal {}
-} */
+/***************************************** Media Query**************************************** */
 
 @media (max-width: 768px) {
   .alinear {
@@ -385,5 +377,47 @@ label {
 
   .alinear button {
     font-size: 0.9rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .contPrincipal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sinAzucar{
+    flex-direction: column-reverse; 
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .dulceDLeche,
+  .dChoconutt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sinAzucar img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .dulceDLeche img,
+  .dChoconutt img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .destacado {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .destacado img {
+    max-width: 60%; 
+    margin-bottom: 20px;
   }
 }
