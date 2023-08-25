@@ -354,10 +354,50 @@ label {
   color: #684827;
 }
 /***************************************** Footer**************************************** */
+footer{
+  background-color: black;
+}
+.encontranos{
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .logo{
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.tit{
+  color:#856A4E;
+  text-align: center;
+}
+.redes i{
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px 20px;
+}
+.dire{
+  color: white;
+  font-weight: 500;
+}
+.fa-solid{
+  margin: 5px;
+}
+iframe{
+  margin-bottom: 10px;
+}
+.miNombre{
+  background-color: #BBA076;
+}
+.miNombre a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 /***************************************** Media Query**************************************** */
 
