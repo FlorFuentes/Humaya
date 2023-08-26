@@ -31,7 +31,7 @@
 h1 {
   color: white;
   font-size: 2.5rem;
-  
+
 }
 
 .info {
@@ -112,6 +112,23 @@ h3 {
   color: var(--color);
 }
 
+/******************* boton scroll****************** */
+.scroll-button {
+
+  display: none;
+  /* Para ocultar el botón inicialmente */
+  font-size: 2.4rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /***************************************** Sin azucar**************************************** */
 .sinAzucar {
   display: flex;
@@ -181,19 +198,25 @@ h5 {
 /* Agrega estos estilos a tu hoja de estilos CSS */
 .destacado {
   display: flex;
-  justify-content: space-between; /* Distribuye el contenido a los extremos */
-  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between;
+  /* Distribuye el contenido a los extremos */
+  align-items: center;
+  /* Centra verticalmente el contenido */
   background-color: #BBA076;
-  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+  padding: 20px;
+  /* Añade un poco de espacio alrededor del contenido */
 }
 
 .destacado .titulo {
-  flex: 1; /* Toma el espacio restante */
+  flex: 1;
+  /* Toma el espacio restante */
 }
 
 .destacado img {
-  max-width: 40%; /* Reduce el ancho de la imagen */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra a la imagen */
+  max-width: 40%;
+  /* Reduce el ancho de la imagen */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  /* Añade una sombra a la imagen */
 }
 
 /* Ajusta el color del texto y el botón según tus necesidades */
@@ -225,6 +248,7 @@ h6,
 .calidad p {
   text-align: center;
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .iconos {
@@ -262,25 +286,31 @@ h6,
   color: white;
   text-align: center;
   margin: 0;
+  font-size: 2rem;
 }
 
 /***************************************** Formulario**************************************** */
 .formulario {
   display: flex;
   /*   justify-content: flex-end; 
+
  */
+  /* agregue */
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
 }
 
 .formulario img {
-  max-width: 50%;
-  max-height: 50%;
-
+  max-width: 40%;
+  /*   max-height: 50%;
+ */
 }
 
 form {
   max-width: 50%;
-  max-height: 50%;
-  margin-right: 20px;
+  /*  max-height: 50%;
+  margin-right: 20px; */
 }
 
 .formulario p {
@@ -353,56 +383,66 @@ label {
   background-color: #BBA076;
   color: #684827;
 }
+
 /***************************************** Footer**************************************** */
-footer{
+footer {
   background-color: black;
 }
-.encontranos{
+
+.encontranos {
   color: white;
   font-size: 2rem;
   font-weight: 500;
 }
-.contenedor{
+
+.contenedor {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.logo{
+
+.logo {
   background-repeat: no-repeat;
   background-size: cover;
 
 }
-.tit{
-  color:#856A4E;
+
+.tit {
+  color: #856A4E;
   text-align: center;
 }
 
 .redes {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
-.redes i{
+.redes i {
   font-size: 1.5rem;
   color: white;
   padding: 10px 20px;
 }
-.dire{
+
+.dire {
   color: white;
   font-weight: 500;
 }
-.fa-solid{
+
+.fa-solid {
   margin: 5px;
 }
-iframe{
+
+iframe {
   margin-bottom: 10px;
 }
-.miNombre{
+
+.miNombre {
   background-color: #BBA076;
   padding: 10px;
 }
-.miNombre a{
+
+.miNombre a {
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -436,11 +476,13 @@ iframe{
     flex-direction: column;
     align-items: center;
   }
-  .sinAzucar{
-    flex-direction: column-reverse; 
+
+  .sinAzucar {
+    flex-direction: column-reverse;
     margin-bottom: 20px;
     text-align: center;
   }
+
   .dulceDLeche,
   .dChoconutt {
     flex-direction: column;
@@ -448,10 +490,12 @@ iframe{
     text-align: center;
     margin-bottom: 20px;
   }
+
   .sinAzucar img {
     max-width: 100%;
     margin-bottom: 20px;
   }
+
   .dulceDLeche img,
   .dChoconutt img {
     max-width: 100%;
@@ -460,21 +504,50 @@ iframe{
 
 @media (max-width: 768px) {
   .destacado {
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .destacado img {
-    max-width: 60%; 
+    max-width: 60%;
     margin-bottom: 20px;
   }
- /*  */
+
+  /*  */
 }
 
-@media (max-width: 422px){
-  iframe{
+/* ver si va aca,acomodar las medias */
+
+@media (max-width: 768px) {
+  .calidad p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .formulario img {
+    display: none;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 422px) {
+  iframe {
     max-width: 75%;
     align-items: center;
-  } 
+  }
 }
