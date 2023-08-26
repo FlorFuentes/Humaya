@@ -365,7 +365,7 @@ footer{
 .contenedor{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .logo{
   background-repeat: no-repeat;
@@ -376,6 +376,13 @@ footer{
   color:#856A4E;
   text-align: center;
 }
+
+.redes {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
 .redes i{
   font-size: 1.5rem;
   color: white;
@@ -393,12 +400,14 @@ iframe{
 }
 .miNombre{
   background-color: #BBA076;
+  padding: 10px;
 }
 .miNombre a{
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
+
 /***************************************** Media Query**************************************** */
 
 @media (max-width: 768px) {
@@ -460,4 +469,12 @@ iframe{
     max-width: 60%; 
     margin-bottom: 20px;
   }
+ /*  */
+}
+
+@media (max-width: 422px){
+  iframe{
+    max-width: 75%;
+    align-items: center;
+  } 
 }
