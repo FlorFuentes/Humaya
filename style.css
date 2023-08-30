@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* background-position: center; */
   width: 100%;
   height: auto;
   display: flex;
@@ -17,7 +16,6 @@
 
 .alinear {
   height: 450px;
-  /* modificado */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -25,20 +23,17 @@
   justify-content: center;
   padding-right: 10px;
   text-align: center;
-
 }
 
 h1 {
   color: white;
   font-size: 2.5rem;
-
 }
 
 .info {
   color: white;
   font-size: 1rem;
   margin: 10px 0;
-
 }
 
 .alinear button {
@@ -47,14 +42,11 @@ h1 {
   font-weight: 500;
   border-radius: 5rem solid rgba(0, 0, 0, 0.64);
   padding: 10px 20px;
-
   font-size: 1rem;
 
 }
 
 /*************************** Productos************************** */
-
-
 h2 {
   margin: 0;
   text-align: center;
@@ -69,25 +61,13 @@ h2 {
   flex-direction: column;
 }
 
-
 .dulceDLeche {
   display: flex;
   justify-content: end;
-
 }
 
 .dulceDLeche img {
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: 75%;
-  height: auto; */
   max-width: 50%;
-  /* Limita el ancho de la imagen */
-
-  /*   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
 .titulo {
@@ -112,21 +92,24 @@ h3 {
   color: var(--color);
 }
 
+.claro:hover {
+  background-color: #BBA076;
+  border-color: var(--color);
+}
+
 /******************* boton scroll****************** */
 .scroll-button {
 
   display: none;
-  /* Para ocultar el botón inicialmente */
   font-size: 2.4rem;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px 20px;
-  /* background-color: #007bff; */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 9999;
 }
 
 /***************************************** Sin azucar**************************************** */
@@ -136,20 +119,8 @@ h3 {
 }
 
 .sinAzucar img {
-  /*   background-image: url(./assets/img/productos/Producto2.png); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: 75%;
-  height: auto; */
   max-width: 50%;
-
 }
-
-/*  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
- */
 
 .presentacion2 {
   color: var(--color);
@@ -160,7 +131,6 @@ h3 {
 h4 {
   color: var(--color);
   font-weight: 100;
-
 }
 
 /***********************************************Dulce Choconutt ***********************************************/
@@ -170,14 +140,6 @@ h4 {
 }
 
 .dChoconutt img {
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: 75%;
-  height: auto; */
-  /*  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   max-width: 50%;
 }
 
@@ -185,48 +147,41 @@ h4 {
   color: var(--color);
   font-weight: 500;
   overflow: hidden;
-
 }
 
 h5 {
   color: var(--color);
   font-weight: 100;
-
 }
 
 /***************************************** Destacado**************************************** */
-/* Agrega estos estilos a tu hoja de estilos CSS */
+
 .destacado {
   display: flex;
   justify-content: space-between;
-  /* Distribuye el contenido a los extremos */
   align-items: center;
-  /* Centra verticalmente el contenido */
   background-color: #BBA076;
   padding: 20px;
-  /* Añade un poco de espacio alrededor del contenido */
 }
 
 .destacado .titulo {
   flex: 1;
-  /* Toma el espacio restante */
+
 }
 
 .destacado img {
   max-width: 40%;
-  /* Reduce el ancho de la imagen */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  /* Añade una sombra a la imagen */
 }
 
-/* Ajusta el color del texto y el botón según tus necesidades */
+
 .presentacion4,
 h6,
 .oscuro {
   color: #63421E;
 }
 
-/* Ajusta el estilo del botón oscuro */
+
 .oscuro {
   border: 2px solid #63421E;
   background-color: transparent;
@@ -236,7 +191,8 @@ h6,
 
 .oscuro:hover {
   background-color: #63421E;
-  color: white;
+  color: var(--color);
+  border-color: #63421E;
 }
 
 /***************************************** Contacto**************************************** */
@@ -274,7 +230,6 @@ h6,
   height: 100px;
   display: block;
   margin: 0 auto;
-
 }
 
 .txt {
@@ -292,10 +247,6 @@ h6,
 /***************************************** Formulario**************************************** */
 .formulario {
   display: flex;
-  /*   justify-content: flex-end; 
-
- */
-  /* agregue */
   align-items: center;
   justify-content: space-around;
   padding: 40px 0;
@@ -303,14 +254,10 @@ h6,
 
 .formulario img {
   max-width: 40%;
-  /*   max-height: 50%;
- */
 }
 
 form {
   max-width: 50%;
-  /*  max-height: 50%;
-  margin-right: 20px; */
 }
 
 .formulario p {
@@ -326,26 +273,27 @@ label {
 }
 
 .form-control {
-  background-color: #856A4E;
-
-
+  background-color: #856a4e55;
 }
 
-/* ver boton o hago un input */
 .btn-outline-primary {
-  align-items: center;
-  color: #684827;
+  border-radius: 2rem;
+  min-width: 10rem;
+  text-align: center;
+  background-color: #856a4e55;
+  border-color: #63421E;
+  color: #63421E;
 }
 
 .btn-outline-primary:hover {
-  background-color: white;
+  color: #63421E;
+  background-color: #856a4e55;
+  border-color: #856A4E;
 }
-
 
 /***************************************** Recetas**************************************** */
 .recetas {
   background-color: black;
-
 }
 
 .rec {
@@ -361,8 +309,6 @@ label {
   justify-content: center;
   gap: 20px;
 }
-
-
 
 .card {
   background-color: #BBA076;
@@ -381,6 +327,12 @@ label {
   font-weight: 600;
   border: 2px solid #684827;
   background-color: #BBA076;
+  color: #684827;
+}
+
+.botoncito:hover {
+  background-color: #856A4E;
+  border-color: #684827;
   color: #684827;
 }
 
@@ -470,7 +422,6 @@ iframe {
 }
 
 
-
 @media (max-width: 768px) {
   .contPrincipal {
     flex-direction: column;
@@ -514,10 +465,7 @@ iframe {
     margin-bottom: 20px;
   }
 
-  /*  */
 }
-
-/* ver si va aca,acomodar las medias */
 
 @media (max-width: 768px) {
   .calidad p {
@@ -528,7 +476,6 @@ iframe {
 @media (max-width: 768px) {
   .formulario {
     flex-direction: column;
-    text-align: center;
   }
 
   .formulario img {
@@ -539,11 +486,6 @@ iframe {
     max-width: 100%;
   }
 }
-
-
-
-
-
 
 @media (max-width: 422px) {
   iframe {
