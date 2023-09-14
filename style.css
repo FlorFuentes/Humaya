@@ -312,6 +312,7 @@ label {
 
 .card {
   background-color: #BBA076;
+  min-height: 300px;
 }
 
 .card-body {
@@ -488,8 +489,15 @@ iframe {
 }
 
 @media (max-width: 422px) {
+
+  .ubicacion,
   iframe {
-    max-width: 75%;
-    align-items: center;
+    /* max-width: 75%;
+    align-items: center; */
+    display: none;
+  }
+
+  .contenedor {
+    text-align: center;
   }
 }

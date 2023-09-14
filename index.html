@@ -43,7 +43,7 @@
             </li>
 
             <li class="nav-item text-center">
-              <a class="nav-link" href="#">Locales</a>
+              <a class="nav-link" href="#ubi">Locales</a>
             </li>
             <li class="nav-item text-center">
               <a class="nav-link" href="#contacto">Contacto</a>
@@ -141,7 +141,7 @@
     
     <section class="formulario" id="contacto">
       <img src="./assets/img/productos/producto6.png" alt="">
-      <form action="">
+      <form action="https://formspree.io/f/mpzgldzl" method="POST" id="contactForm">
         <p class="contact">Déjanos tu consulta y nuestro personal se pondrá en contacto a la brevedad:</p>
         <label for="Nombre" class="form-label">NOMBRE</label>
         <input type="text" class="form-control" placeholder="Escribi tu Nombre" name="nombre" required />
@@ -156,8 +156,8 @@
 
     <section class="recetas">
       <p class="rec">Recetas</p>
-      <div class="card-container">
-        <div class="card" style="width: 18rem;">
+      <div class="card-container" id="recetas-container">
+        <!-- <div class="card" style="width: 18rem;">
           <img src="./assets/img/recetas/conito.jpg" class="card-img-top" alt="conito">
           <div class="card-body">
             <h5 class="card-title text-center">CONITOS</h5>
@@ -185,7 +185,7 @@
               la hora del té.</p>
             <a href="#" class="botoncito btn btn-primary">PREPARACIÓN</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </main>
@@ -202,7 +202,7 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-tiktok"></i>
       </div>
-      <div class="ubi">
+      <div class="ubi ubicacion" id="ubi">
         <p class="tit">Ubicación</p>
         <p class="dire"><i class="fa-solid fa-location-dot"></i>Monte de Oca 2356, CABA</p>
         <iframe
